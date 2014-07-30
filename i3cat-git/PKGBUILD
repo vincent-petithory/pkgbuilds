@@ -21,9 +21,13 @@ pkgver() {
 }
 
 build() {
-  p="$(dirname "${srcdir}/src/${_gourl}")"
-  mkdir -p "$p"
-  mv "$srcdir/i3cat" "$p"
+  p="${srcdir}/src/${_gourl}"
+  if [ -d "${p}/.git" ]; then
+    git --git-dir="${p}/.git" --work-tree="$p" remote set-url origin "file://$p"
+    git --git-dir="${p}/.git" --work-tree="$p" pull origin
+  else
+    git clone file://"${srcdir}/i3cat" "${p}"
+  fi
   export GOPATH="$srcdir"
   go get -v "${_gourl}/..."
   go install "${_gourl}/..."
