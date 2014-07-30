@@ -1,7 +1,7 @@
 pkgbuilds
 =========
 
-A few Arch Linux PKGBUILDs I maintain.
+A few Arch Linux PKGBUILDs I [maintain](https://aur.archlinux.org/packages/?SeB=m&K=v.petithory).
 
 ### [i3cat-git](https://github.com/vincent-petithory/i3cat)
 
