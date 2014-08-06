@@ -11,7 +11,7 @@ makedepends=('go' 'git')
 depends=()
 optdepends=('i3-wm: for i3bar')
 options=('!strip' '!emptydirs')
-source='git+https://github.com/vincent-petithory/i3cat.git'
+source=('git+https://github.com/vincent-petithory/i3cat.git')
 md5sums=('SKIP')
 _gourl='github.com/vincent-petithory/i3cat'
 
