@@ -11,3 +11,6 @@ A program to wrap i3status and other programs to feed an i3bar.
 
 A program for [mpd](http://www.musicpd.org/) which makes use of the sticker db to store song playcounts and ratings.
 
+### [camlistore-git](https://camlistore.org/)
+
+Camlistore is your personal storage system for life.
