@@ -14,3 +14,7 @@ A program for [mpd](http://www.musicpd.org/) which makes use of the sticker db t
 ### [camlistore-git](https://camlistore.org/)
 
 Camlistore is your personal storage system for life.
+
+### [kraken-git](https://github.com/vincent-petithory/kraken)
+
+kraken is a on-demand http server: you can create new http servers at runtime, for sharing files on LAN and else.
