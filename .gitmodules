@@ -1,0 +1,12 @@
+[submodule "camlistore-git"]
+	path = camlistore-git
+	url = ssh://aur@aur4.archlinux.org/camlistore-git.git
+[submodule "mpdfav-git"]
+	path = mpdfav-git
+	url = ssh://aur@aur4.archlinux.org/mpdfav-git.git
+[submodule "i3cat-git"]
+	path = i3cat-git
+	url = ssh://aur@aur4.archlinux.org/i3cat-git.git
+[submodule "kraken-git"]
+	path = kraken-git
+	url = ssh://aur@aur4.archlinux.org/kraken-git.git
