@@ -1,7 +1,7 @@
 # Maintainer: Vincent Petithory <vincent.petithory at gmail dot com>
 
 pkgname=kraken-git
-pkgver=r67.9878e19
+pkgver=r70.2c5f7ce
 pkgrel=1
 pkgdesc='File sharing with HTTP servers.'
 arch=('x86_64' 'i686' 'ARM')
@@ -22,7 +22,7 @@ pkgver() {
 build() {
   p="${srcdir}/src/${_gourl}"
   if [ -d "${p}/.git" ]; then
-    git --git-dir="${p}/.git" --work-tree="$p" remote set-url origin "file://$p"
+    git --git-dir="${p}/.git" --work-tree="$p" remote set-url origin "file://${srcdir}/kraken"
     git --git-dir="${p}/.git" --work-tree="$p" pull origin
   else
     git clone file://"${srcdir}/kraken" "${p}"

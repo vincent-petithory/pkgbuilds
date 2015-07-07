@@ -23,7 +23,7 @@ pkgver() {
 build() {
   p="${srcdir}/src/${_gourl}"
   if [ -d "${p}/.git" ]; then
-    git --git-dir="${p}/.git" --work-tree="$p" remote set-url origin "file://$p"
+    git --git-dir="${p}/.git" --work-tree="$p" remote set-url origin "file://${srcdir}/mpdfav"
     git --git-dir="${p}/.git" --work-tree="$p" pull origin
   else
     git clone file://"${srcdir}/mpdfav" "${p}"
